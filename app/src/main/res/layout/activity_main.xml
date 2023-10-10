@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#19FAF7F7"
+    android:backgroundTintMode="screen"
+    tools:context=".MainActivity">
+
+
+
+    <EditText
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:textColorHighlight="@android:color/holo_green_light"
+        android:maxLength="2"
+        android:id="@+id/editTextNumber2"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:ems="11"
+        android:hint="@string/second_label"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="?attr/colorSurfaceInverse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editTextNumber"
+        tools:ignore="Deprecated, HardcodedText,TextContrastCheck" />
+
+    <EditText
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:id="@+id/editTextNumber"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="269dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:ems="11"
+        android:hint="@string/first_label"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="?attr/colorSurfaceInverse"
+        android:textColorHighlight="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Deprecated,HardcodedText,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="160dp"
+        android:backgroundTint="#7A3B5A"
+        android:fontFamily="sans-serif"
+        android:onClick="compare"
+        android:text="@string/button_label"
+        android:textColor="#FEFAFC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="269dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:ems="18"
+        android:hint="@string/result_label"
+        android:importantForAutofill="no"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="?attr/colorSurfaceInverse"
+        android:textColorHighlight="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editTextNumber2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

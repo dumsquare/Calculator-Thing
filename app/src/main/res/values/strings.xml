@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Calculator-Thing</string>
+    <string name="first_label"># of Apples</string>
+    <string name="second_label"># of Oranges</string>
+    <string name="result_label">Comparison</string>
+    <string name="button_label">Compare</string>
+
+</resources>
